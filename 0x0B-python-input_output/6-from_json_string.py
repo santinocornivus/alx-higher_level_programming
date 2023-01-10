@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-# 6-from_json_string.py
-"""Defines a JSON-to-object function."""
-import json
+"""This is the documentation for this module. On this file we get a
+object representation of a JSON rep"""
 
 
 def from_json_string(my_str):
-    """Return the Python object representation of a JSON string."""
-    return json.loads(my_str)
+    import json
+    x = json.loads(my_str)
+    return(x)

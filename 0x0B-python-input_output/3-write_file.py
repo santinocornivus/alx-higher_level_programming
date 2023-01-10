@@ -1,16 +1,8 @@
 #!/usr/bin/python3
-# 3-write_file.py
-"""Defines a file-writing function."""
+"""This is the documentation for this module. This time we have to add
+a string into a given file, no matter if file previously existed or not"""
 
 
 def write_file(filename="", text=""):
-    """Write a string to a UTF8 text file.
-
-    Args:
-        filename (str): The name of the file to write.
-        text (str): The text to write to the file.
-    Returns:
-        The number of characters written.
-    """
-    with open(filename, "w", encoding="utf-8") as f:
-        return f.write(text)
+    with open(filename, 'w') as archivo:
+        return(archivo.write(text))
